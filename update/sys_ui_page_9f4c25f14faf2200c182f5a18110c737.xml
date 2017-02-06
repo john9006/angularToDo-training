@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_15637_angular_td_angular_td.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<script language="javascript" src="x_15637_angular_td.Angular.1.3.14.jsdbx" /> 
+<script src="x_15637_angular_td.app_angular_todo.jsdbx"></script>
+<script src="service.sn-glideAjax.jsdbx"></script>
+<div ng-app="todo">
+	<div class="col-md-6" ng-controller="TodoListCtrl">
+		<h1>Todo List</h1>
+		<ul class="list-group">
+		  <li class="list-group-item" ng-repeat="todoItem in todos" ng-bind="todoItem"></li>
+		</ul>
+	<div>
+	<label>Add new todo;
+		<input class="form-control" ng-model="newTodo"/>
+	</label>
+	<button ng-click="add(newTodo)" type="button" class="btn-primary">Add Todo</button>
+	</div>
+  </div>
+</div>
+</j:jelly>]]></html>
+        <name>angular_td</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>john.kelly</sys_created_by>
+        <sys_created_on>2016-12-08 03:55:04</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>9f4c25f14faf2200c182f5a18110c737</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>angular_td</sys_name>
+        <sys_package display_value="Angular Todo" source="x_15637_angular_td">97e75db54f6f2200c182f5a18110c712</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Angular Todo">97e75db54f6f2200c182f5a18110c712</sys_scope>
+        <sys_update_name>sys_ui_page_9f4c25f14faf2200c182f5a18110c737</sys_update_name>
+        <sys_updated_by>john.kelly</sys_updated_by>
+        <sys_updated_on>2016-12-09 06:51:16</sys_updated_on>
+    </sys_ui_page>
+</record_update>

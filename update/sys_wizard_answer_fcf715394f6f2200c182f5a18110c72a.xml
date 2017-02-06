@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Angular Todo List</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Angular Todo List</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">25ac13534f101200c182f5a18110c7ca</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>john.kelly</sys_created_by>
+        <sys_created_on>2016-12-08 02:24:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fcf715394f6f2200c182f5a18110c72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Angular Todo List</sys_name>
+        <sys_package display_value="Angular Todo" source="x_15637_angular_td">97e75db54f6f2200c182f5a18110c712</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Angular Todo">97e75db54f6f2200c182f5a18110c712</sys_scope>
+        <sys_update_name>sys_wizard_answer_fcf715394f6f2200c182f5a18110c72a</sys_update_name>
+        <sys_updated_by>john.kelly</sys_updated_by>
+        <sys_updated_on>2016-12-08 02:24:55</sys_updated_on>
+        <table/>
+        <target_url>x_15637_angular_td_angular_list.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

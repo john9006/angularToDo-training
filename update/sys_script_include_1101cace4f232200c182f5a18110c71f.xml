@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_15637_angular_td.TodoAppPersistence</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>TodoAppPersistence</name>
+        <script><![CDATA[var TodoAppPersistence = Class.create();
+TodoAppPersistence.prototype =  Object.extendsObject(global.AbstractAjaxProcessor, {
+    getList: function() {
+		
+		var todos = new GlideRecord('x_15637_angular_td_angular_list');
+		todos.addQuery('opened_by', gs.getUserID());
+		todos.orderBy('opened_at');
+		todos.query();
+		
+		var list = [];
+		while (todos.next()) {
+			list.push(todos.short_description + '');
+			
+		}
+		
+		return JSON.stringify(list);
+    },
+	
+	add: function() {
+		var todos = new GlideRecord('x_15637_angular_td_angular_list');
+		todos.newRecord();
+		todos.short_description = this.getParameter('short_description');
+		todos.opened_by = gs.getUserID();
+		todos.insert();
+	},
+
+    type: 'TodoAppPersistence'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>john.kelly</sys_created_by>
+        <sys_created_on>2016-12-09 00:15:04</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1101cace4f232200c182f5a18110c71f</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>TodoAppPersistence</sys_name>
+        <sys_package display_value="Angular Todo" source="x_15637_angular_td">97e75db54f6f2200c182f5a18110c712</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Angular Todo">97e75db54f6f2200c182f5a18110c712</sys_scope>
+        <sys_update_name>sys_script_include_1101cace4f232200c182f5a18110c71f</sys_update_name>
+        <sys_updated_by>john.kelly</sys_updated_by>
+        <sys_updated_on>2016-12-09 05:22:16</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Angular Todo List" max_length="40" name="x_15637_angular_td_angular_list" sizeclass="4" type="collection"/>
+</database>

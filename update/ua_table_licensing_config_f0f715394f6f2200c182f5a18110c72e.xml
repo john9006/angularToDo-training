@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>true</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_15637_angular_td_angular_list</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition table="x_15637_angular_td_angular_list">opened_by=javascript:gs.getUserID()^EQ<item endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </owner_condition>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>john.kelly</sys_created_by>
+        <sys_created_on>2016-12-08 02:24:55</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f0f715394f6f2200c182f5a18110c72e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_15637_angular_td_angular_list</sys_name>
+        <sys_package display_value="Angular Todo" source="x_15637_angular_td">97e75db54f6f2200c182f5a18110c712</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Angular Todo">97e75db54f6f2200c182f5a18110c712</sys_scope>
+        <sys_update_name>ua_table_licensing_config_f0f715394f6f2200c182f5a18110c72e</sys_update_name>
+        <sys_updated_by>john.kelly</sys_updated_by>
+        <sys_updated_on>2016-12-08 02:24:55</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>
